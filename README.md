@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Halo Kak Frontend - React Js
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Getting Started with Halo Kak Frontend
+
+- Run `npm install` to install all the necessary dependencies.
+
+**Important**: Please create .env.production and env.development to differentiate between deployment environment - see .env.example for reference to [Adding Custom Environment Variables](https://create-react-app.dev/docs/adding-custom-environment-variables)
 
 ## Available Scripts
 
@@ -40,6 +44,8 @@ Instead, it will copy all the configuration files and the transitive dependencie
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Learn More
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
