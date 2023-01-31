@@ -1,25 +1,28 @@
 import React from "react";
-import logo from "./logo.svg";
+import { Container, ThemeProvider, useTheme } from "@mui/material";
+import { Helmet } from "react-helmet";
 import "./App.css";
+import ResponsiveAppBar from "./components/Navbar/Navbar";
+import Beranda from "./components/Beranda/Beranda";
 
-function App() {
+const App = () => {
+  const theme = useTheme();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Selamat datang</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="halo"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Helmet>
+        <title>{process.env.REACT_APP_NAME}</title>
+      </Helmet>
+      <Container
+        sx={{
+          width: "auto",
+          margin: { xs: 0, sm: 0, lg: "34px auto 50px auto" },
+        }}
+      >
+        <ResponsiveAppBar />
+      </Container>
+      <Beranda />
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
