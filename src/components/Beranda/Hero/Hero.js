@@ -18,7 +18,11 @@ const Hero = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Typography
               variant="h3"
-              sx={{ fontFamily: "Poppins", marginBottom: "20px" }}
+              sx={{
+                fontFamily: "Poppins",
+                marginBottom: "20px",
+                fontWeight: "bold",
+              }}
             >
               Mentoring Jadi Lebih Mudah
             </Typography>

@@ -41,7 +41,11 @@ const Mentors = () => {
           <Grid item xs={16} md={16} lg={16}>
             <Typography
               variant="h3"
-              sx={{ fontFamily: "Poppins", marginBottom: "20px" }}
+              sx={{
+                fontFamily: "Poppins",
+                marginBottom: "20px",
+                fontWeight: "bold",
+              }}
             >
               Pilih Mentor Terbaikmu
             </Typography>
