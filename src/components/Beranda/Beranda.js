@@ -31,9 +31,10 @@ const Beranda = () => {
           minHeight: "572px",
           backgroundColor: "white",
         }}
-        textAlign="center"
       >
-        <Mentors />
+        <Container sx={{ paddingTop: "64px" }}>
+          <Mentors />
+        </Container>
       </Grid>
     </Grid>
   );
